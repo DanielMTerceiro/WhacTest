@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Whac a mole game created on javascript for a quick game to relax">
+    <meta name="keywords"
+    content="whack a mole, mole, whac a mole, game, casual game, relax, smash">
+    <title>Whac-a-Mole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1 id="logo">Whac-a-Mole </h1>
+
+        </a>
+
+        <nav>
+            <img src="assets/images/logo.svg" class="whac" height="65" width="55" alt="whac a mole logo">
+            <ul id="menu">
+
+                <li>
+                    <a href="how.html">How to play</a>
+                </li>
+
+                <li>
+                    <a href="game.html">Game</a>
+                </li>
+                
+                <li>
+                    <a href="history.html" class="active">History</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div class="icon">
+    <div class="wrapper">
+        <div class="score">0</div>
+        <div class="countdown"></div>
+        <button class="startButton">Smash Time!</button>
+        
+        <div class="game">
+            <div class="hole hole1">
+                <div class="mole small"></div>
+            </div>
+            <div class="hole hole2">
+                <div class="mole small"></div>
+            </div>
+            <div class="hole hole3">
+                <div class="mole small"></div>
+            </div>
+            <div class="hole hole4">
+                <div class="mole large"></div>
+            </div>
+            <div class="hole hole5">
+                <div class="mole large"></div>
+            </div>
+            <div class="hole hole6">
+                <div class="mole large"></div>
+            </div>
+        </div>
+        <h2>High Score:<div class="highscore">0</div></h2>
+    </div>
+
+
+    <section id="how-to">
+        <h2 id="how-title">How to Play</h2>
+
+        <div id="instructions">
+            <div>
+                <h3><br>Playing the game is easy</h3>
+                <hr>
+                <p>Click Start on the game window, your mouse will change to a Hammer,<br> click on the moles that show up from the ground,
+                    but be careful, they are fast!<br> For each mole that you hit you score 01 point, see how manu points you can score by the end of the time</p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="game-history">
+        <h2 id="history-title">History about Whac a mole</h2>
+
+        <div id="history">
+            <div>
+                <h3><br>History</h3>
+                <hr>
+                <p>Mogura Taiji was invented in 1975 by Kazuo Yamada of TOGO, based on ten of the designer's pencil sketches from 1974.
+                    TOGO released it as Mogura Taiji to Japanese amusement arcades in 1975.
+                    It was later licensed to Bandai in 1977.
+                    It became a major commercial success in Japan, where it became the second highest-grossing electro-mechanical 
+                    arcade game of 1976 and again in 1977, second only to Namco's popular arcade racing game F-1 in both years.
+                    In the late 1970s, arcade centers in Japan began to be flooded with "mole buster" games, where players used a 
+                    foam mallet to hit plastic moles that popped out of the machine.Mogura Taiji has since been commonly found at 
+                    Japanese festivals.
+
+                    Mogura Taiji made its North American debut in November 1976 at the International Association of Amusement Parks
+                    and Attractions (IAAPA) show, where it drew attention for being the first mallet game of its type. 
+                    Gerald Denton and Donny Anderson saw the Japanese game, and decided they wanted to adapt it into a carnival 
+                    game by putting it in a trailer, with Denton also showing it to Aaron Fechter at the same show.
+                    Denton assigned Fechter the task of building their own version of the game, with Fechter coining the name 
+                    "Whac-A-Mole" and adding air cylinders, "so that when air pushed up the moles, 
+                    the air acted as a cushion." Fechter developed the prototype in 1977, with Denton and Anderson 
+                    presenting it to the founder of Bob's Space Racers, Bob Cassata, the same year. After Bob made further 
+                    refinements to the game, Bob's Space Racers made its first sale of the game in 1977. In 1978,
+                    it debuted at a midway exhibition show, where it was the most popular game. The following year, 
+                    it debuted at pinball parlours. In 1980, it was sold in the carnival, amusement park and coin-op arcade markets.
+                     Whac-A-Mole has since become a popular carnival game.
+                    
+                    Meanwhile, back in Japan, Namco who were beginning to shift towards arcade video game production, 
+                    with hits like Galaxian (1979) and Pac-Man (1980), noticed arcade centers in Japan were flooded with 
+                    "mole buster" games.To capitalize on their popularity, Namco began work on a similar game with a unique
+                     motif to help it stand out from other similar games. Sweet Licks (1981) was originally designed by TOGO, 
+                     who had originally named it Mole Attack. Namco purchased the rights to the game and re-skinned it.
+                     Sweet Licks was designed by Yukio Ishikawa, a mechanical game designer for Namco.
+                     The game was themed around cake and pastries to help attract women.
+                     It used an LCD monitor to keep track of the player's score, being the first arcade game to employ such a concept.
+                     Sweet Licks became popular in Japan,and was subsequently released in North America in April 1982,and then 
+                     in Europe where it became popular in the 1980s.</p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <div>
+        <footer>
+            
+            <h2 class="find">Follow us on Social Media:</h2>
+            <ul class="social-networks">
+                
+                <li>
+                    <a href="https://facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit our facebook page (opens in a new tab)">
+                        <i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit our instagram page (opens in a new tab)">
+                        <i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit our twitter page (opens in a new tab)">
+                        <i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank" rel="noopener"
+                        aria-label="Visit our youtube page (opens in a new tab)">
+                        <i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+
+        </footer>
+    </div>
+    
+
+</body>
+   <div class="cursor">
+    <img src="https://i.ibb.co/HtBs1hx/hammer.png" />
+    </div>
+
+<script src="script.js"></script>
+<!-- Font awesome script-->
+<script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</html>
