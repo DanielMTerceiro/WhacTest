@@ -17,29 +17,32 @@
             <h1 id="logo">Whac-a-Mole </h1>
 
         </a>
+        
+        <img src="assets/images/logo.png" class="whac" height="65" width="65" alt="whac a mole logo">
 
-        <nav>
-            <img src="assets/images/logo.svg" class="whac" height="65" width="55" alt="whac a mole logo">
-            <ul id="menu">
+        <nav class="nav">
 
-                <li>
-                    <a href="how.html">How to play</a>
-                </li>
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
 
-                <li>
-                    <a href="game.html">Game</a>
-                </li>
+            <div class="menu">
                 
-                <li>
-                    <a href="history.html" class="active">History</a>
-                </li>
+                
+                    <a href="how.html">How to play</a>
+                
+              
+                    <a href="game.html">Game</a>
+                              
+              
+                    <a href="history.html">History</a>
+                
 
-            </ul>
+            </div>
 
         </nav>
 
     </header>
-
+    <section class="fullgame">
     <div class="icon">
     <div class="wrapper">
         <div class="score">0</div>
@@ -68,31 +71,29 @@
         </div>
         <h2>High Score:<div class="highscore">0</div></h2>
     </div>
+</section>
 
+    <section id="how">
+        <h2>How to Play</h2>
 
-    <section id="how-to">
-        <h2 id="how-title">How to Play</h2>
-
-        <div id="instructions">
-            <div>
-                <h3><br>Playing the game is easy</h3>
-                <hr>
-                <p>Click Start on the game window, your mouse will change to a Hammer,<br> click on the moles that show up from the ground,
-                    but be careful, they are fast!<br> For each mole that you hit you score 01 point, see how manu points you can score by the end of the time</p>
-            </div>
+            <div id="introbox">
+                <h3>Playing the game is easy</h3>
+                <li>Click "Smash Time"" on the game window, your mouse will change to a Hammer</li>
+                <li>Hammer down the moles that show up from the ground, but be careful, they are fast!</li> 
+                <li>For each mole that you hit you score 01 point, see how many points you can score by the end of the time</li>
+            
             
         </div>
 
     </section>
 
     <section id="game-history">
-        <h2 id="history-title">History about Whac a mole</h2>
+        <h2 >About Whac a mole</h2>
 
         <div id="history">
-            <div>
-                <h3><br>History</h3>
-                <hr>
-                <p>Mogura Taiji was invented in 1975 by Kazuo Yamada of TOGO, based on ten of the designer's pencil sketches from 1974.
+            <h3>History</h3>
+                
+                <p>Whac a Mole (Mogura Taiji) was invented in 1975 by Kazuo Yamada of TOGO, based on ten of the designer's pencil sketches from 1974.
                     TOGO released it as Mogura Taiji to Japanese amusement arcades in 1975.
                     It was later licensed to Bandai in 1977.
                     It became a major commercial success in Japan, where it became the second highest-grossing electro-mechanical 
@@ -124,13 +125,12 @@
                      It used an LCD monitor to keep track of the player's score, being the first arcade game to employ such a concept.
                      Sweet Licks became popular in Japan,and was subsequently released in North America in April 1982,and then 
                      in Europe where it became popular in the 1980s.</p>
-            </div>
-            
+                        
         </div>
 
     </section>
 
-    <div>
+    <div class="footer">
         <footer>
             
             <h2 class="find">Follow us on Social Media:</h2>
