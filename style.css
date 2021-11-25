@@ -5,14 +5,14 @@
 }
 
 body {
-  font-family: "Helvetica";
+  font-family: 'Helvetica';
   position: relative;
 }
 /* Headlines and Logos */
 
 h1,
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 350;
 
   letter-spacing: 4px;
@@ -76,26 +76,39 @@ label {
 .fullgame {
   padding-top: 50px;
 }
-
+/* 
 .cursor {
   display: none;
-}
+} */
 
 .icon:hover {
-  cursor: url(https://i.ibb.co/HtBs1hx/hammer.png) 150 150, auto;
+  cursor: url('./assets/hammer_24x24.png'), crosshair;
+}
+
+.icon:hover.hammerRotate {
+  cursor: url('./assets/hammer_24x24 rotate.png'), crosshair;
 }
 
 .wrapper {
   height: 600px;
-  width: 800px;
   border: 1px solid black;
+  margin: 0 auto;
   position: relative;
-  background-image: url("https://i.ibb.co/5nc4rCG/background1.png");
+  background-image: url('https://i.ibb.co/5nc4rCG/background1.png');
   overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
+}
+.wrapper .titulo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('https://titulo.png');
+  background-size: contain;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .score {
@@ -136,11 +149,12 @@ button {
 }
 
 .game {
-  width: 600px;
+  /* width: 600px; */
   height: 400px;
   margin: 70px auto;
   z-index: 200;
   display: flex;
+  max-width: 890px;
   flex-wrap: wrap;
 }
 .hole {
@@ -150,20 +164,22 @@ button {
 }
 
 .hole::after {
-  content: "";
+  content: '';
   display: block;
-  background-image: url("https://i.ibb.co/KFbym6L/sand1.png");
+  background-image: url('https://i.ibb.co/KFbym6L/sand1.png');
 
   position: absolute;
-  width: 90%;
+  width: 100%;
   height: 70px;
   z-index: 2;
   bottom: -30px;
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .mole {
-  background-image: url("https://i.ibb.co/WKxs0Hs/mole1.png");
+  background-image: url('https://i.ibb.co/WKxs0Hs/mole1.png');
   position: absolute;
   top: 100%;
   width: 100%;
@@ -190,6 +206,7 @@ button {
   height: 125px;
   z-index: 1000;
 }
+
 @keyframes hit {
   from {
     transform: rotate(0deg);
@@ -239,7 +256,7 @@ button {
 }
 
 #history {
-  padding: 0 200px;
+  padding: 0 clamp(8%, 100px, 10%);
   margin: 0 auto;
 }
 
@@ -295,10 +312,6 @@ button {
     height: 45px;
     width: 45px;
   }
-
-  #history {
-    padding: 0 100px;
-  }
   #introbox {
     padding: 0 100px;
   }
@@ -313,9 +326,7 @@ button {
   .whac {
     margin-top: 15px;
   }
-  #history {
-    padding: 0 80px;
-  }
+
   #introbox {
     padding: 0 80px;
   }
@@ -334,5 +345,11 @@ button {
   #toggle:checked + .menu {
     display: block;
     text-align: right;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #introbox {
+    padding: 0 40px;
   }
 }
